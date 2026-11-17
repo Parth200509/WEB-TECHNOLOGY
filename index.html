@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Technology | Study Notes</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript File -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- COVER PAGE -->
+    <section id="coverPage" class="cover">
+        <div class="cover-card">
+
+            <span class="badge">STUDY • PRACTICE • REVISE</span>
+
+            <h1>Web Technology</h1>
+
+            <p>
+                Learn Web Technology with simple theory,
+                syntax, code examples and outputs.
+            </p>
+
+            <button id="exploreBtn" class="primary-btn">
+                Explore Syllabus →
+            </button>
+
+        </div>
+    </section>
+    
+<!-- INDEX PAGE -->
+<section id="indexPage" class="index-page hidden">
+
+    <div class="index-card">
+
+        <span class="badge">WEB TECHNOLOGY</span>
+
+        <h1>Table of Contents</h1>
+
+        <p class="index-description">
+            Welcome to your Web Technology study portal.
+            Select a unit to explore its topics and notes.
+        </p>
+
+        <div class="index-grid">
+
+            <button class="index-unit" data-unit="0">
+                <span class="unit-number">01</span>
+                <span>
+                    <strong>Unit 1</strong>
+                    <small>Web Fundamentals</small>
+                </span>
+                <span>→</span>
+            </button>
+
+            <button class="index-unit" data-unit="1">
+                <span class="unit-number">02</span>
+                <span>
+                    <strong>Unit 2</strong>
+                    <small>HTML and CSS</small>
+                </span>
+                <span>→</span>
+            </button>
+
+            <button class="index-unit" data-unit="2">
+                <span class="unit-number">03</span>
+                <span>
+                    <strong>Unit 3</strong>
+                    <small>JavaScript Fundamentals</small>
+                </span>
+                <span>→</span>
+            </button>
+
+            <button class="index-unit" data-unit="3">
+                <span class="unit-number">04</span>
+                <span>
+                    <strong>Unit 4</strong>
+                    <small>DOM and Forms</small>
+                </span>
+                <span>→</span>
+            </button>
+
+            <button class="index-unit" data-unit="4">
+                <span class="unit-number">05</span>
+                <span>
+                    <strong>Unit 5</strong>
+                    <small>Hosting, Networking and Security</small>
+                </span>
+                <span>→</span>
+            </button>
+
+        </div>
+
+        <button id="backToCoverBtn" class="secondary-btn">
+            ← Back to Cover
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- MAIN WEBSITE -->
+    <main id="appPage" class="app hidden">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <div class="brand">WEB TECHNOLOGY</div>
+
+            <span class="header-text">Interactive Study Notes</span>
+
+            <button id="homeBtn" class="secondary-btn">
+                Cover Page
+            </button>
+
+        </header>
+
+
+        <!-- WEBSITE LAYOUT -->
+        <div class="layout">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+
+                <h2>📚 Course Syllabus</h2>
+
+                <p class="sidebar-text">
+                    Select a unit to explore its topics.
+                </p>
+
+                <div id="unitList" class="unit-list"></div>
+
+            </aside>
+
+
+            <!-- MAIN CONTENT -->
+            <section class="content">
+
+                <div class="page-header">
+                    <span class="badge">YOUR LEARNING SPACE</span>
+
+                    <h1 id="pageHeading">Web Technology</h1>
+
+                    <p id="pageIntro">
+                        Choose a topic to begin learning.
+                    </p>
+                </div>
+
+
+                <!-- TOPIC BUTTONS -->
+                <div id="topicList" class="topic-list"></div>
+
+
+                <!-- NOTES -->
+                <article id="noteContent" class="note-card">
+
+                    <h2>Welcome to Web Technology</h2>
+
+                    <p>
+                        Select a unit and topic to view the notes.
+                    </p>
+
+                </article>
+
+                <footer>
+                    Web Technology Study Portal · Learn at Your Pace
+                </footer>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
